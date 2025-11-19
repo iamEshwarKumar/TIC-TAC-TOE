@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>XOX — Tic Tac Toe (Pastel Responsive)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="game-wrap" role="main">
+<h1>XOX — Tic Tac Toe</h1>
+
+
+<header class="top-row">
+<div class="score" aria-live="polite">
+<div class="box">X: <span id="scoreX">0</span></div>
+<div class="box">O: <span id="scoreO">0</span></div>
+</div>
+
+
+<div class="controls">
+<button id="modeBtn" class="btn-ghost" aria-pressed="false">Mode: 2 Players</button>
+<button id="resetBtn" class="btn-primary">New Game</button>
+</div>
+</header>
+
+
+<section class="board-wrap">
+<div class="board" id="board" role="grid" aria-label="Tic tac toe board"></div>
+</section>
+
+
+<div class="status" id="status">Current: <span id="current">X</span></div>
+<div class="line" id="progress" aria-hidden="true"></div>
+<p class="footer">Pastel edition — smooth & aesthetic gameplay ✨</p>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
